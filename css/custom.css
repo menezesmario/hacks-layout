@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #FFF;
+    list-style-type: none;
+}
+
+body {
+    background-color: black; ;
+}
+
+.max-width {
+    max-width: 1400px;
+    padding: 0 20px;
+}
