@@ -5,14 +5,92 @@
     text-decoration: none;
     font-family: sans-serif;
     color: #FFF;
-    list-style-type: none;
 }
 
 body {
-    background-color: black; ;
+    background-color: rgb(27, 24, 43) ;
 }
 
 .max-width {
     max-width: 1400px;
     padding: 0 20px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background-color: rgb(26, 25, 25);
+    border-bottom: solid rgb(59, 59, 59) 2px;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: rgb(132, 132, 255);
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: rgb(132, 132, 255);
+    margin-left: 25px;
+}
+
+.menu-btn {
+    color: #FFF;
+    font-size: 23px;
+    cursor: pointer;    
+    display: none;
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        background-color: #0f0f0f;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -99%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+
+    }
+    .max-width {
+        max-width: 930px;
+    }
 }
