@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    color: #FFF;
 }
 
 html, body {
@@ -213,6 +212,95 @@ section {
     font-weight: bold;
 }
 
+.news-form {
+    color: #FFF;
+}
+
+.right .text {
+    margin-bottom: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.field label {
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.right input {
+    height: 40px;
+}
+
+.news-form .news-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: calc(40% - 20px);
+    text-align: center;
+    justify-content: center;
+}
+
+.column .icons i {
+    width: 90%;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+}
+
+.subject p {
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+
+.subject .inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.field .item label {
+    display: flex;
+    text-align: start;
+}
+
+textarea {
+    width: 100%;
+}
+
+.subject .inputs .item {
+    display: flex;
+    width: 40%;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.column .inputs .item label {
+    margin: 0 10px;
+}
+
+
+
+
 
 footer {
     background-color: #1A1919;
@@ -277,6 +365,6 @@ footer span a:hover {
 
 @media (max-width: 690px){
     .services .serv-content .card {
-        width: calc(80% - 10px);
+        width: calc(90% - 10px);
     }
 }
