@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +9,14 @@
     color: #FFF;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: rgb(27, 24, 43) ;
+    display: flex;
+    flex-direction: column;
 }
 
 .max-width {
@@ -24,6 +32,7 @@ body {
     padding: 20px 0;
     background-color: rgb(26, 25, 25);
     border-bottom: solid rgb(59, 59, 59) 2px;
+
 }
 
 .navbar .max-width {
@@ -47,6 +56,8 @@ body {
     display: block;
     color: rgb(132, 132, 255);
     margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .menu-btn {
@@ -54,6 +65,30 @@ body {
     font-size: 23px;
     cursor: pointer;    
     display: none;
+}
+
+.texto-teste {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1A1919;
+    padding: 25px;
+    color: gray;
+    text-align: center;
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    border-top: solid rgb(59, 59, 59) 2px;
+}
+
+footer span a {
+    color: rgb(132, 132, 255);
+}
+
+footer span a:hover {
+    color: #fff;
 }
 
 @media (max-width: 947px) {
