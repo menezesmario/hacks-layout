@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    background-color: rgb(27, 24, 43) ;
+    background-color: #0E273B ;
     display: flex;
     flex-direction: column;
 }
@@ -95,6 +95,9 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2em;
+    background-color: rgba(34, 34, 34, 0.7);
+    z-index: -2;
+    
 }
 
 #color-overlay {
@@ -106,12 +109,14 @@ section {
     background-color: black;
     opacity: .7;
     display: flex;
+    z-index: -1;
 }
 
 .top .max-width {
     width: 100%;
     display: flex;
     color: #0f0f0f;
+    z-index: 999;
 }
 
 .top .top-content .text-1 {
@@ -170,7 +175,44 @@ section {
 
 .services .serv-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background-color: #1A1919;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    transition: transform .6s;
+    margin-bottom: 30px;
+}
+
+.services .serv-content .card:hover {
+    background-color: #0f0f0f;
+    transform: scale(1.1);
+}
+
+.services .serv-content .card i{
+    font-size: 3em;
+    color: #3ed4b4;
+    transition: all 0.3s ease-out;
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
+
+}
+
+.services .serv-content .card .text {
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
 
 footer {
     background-color: #1A1919;
@@ -227,5 +269,14 @@ footer span a:hover {
     }
     .max-width {
         max-width: 930px;
+    }
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 690px){
+    .services .serv-content .card {
+        width: calc(80% - 10px);
     }
 }
